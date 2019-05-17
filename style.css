@@ -2,7 +2,7 @@ html {
   font-size: 100%;
 }
 
-@media {
+@media screen {
   #container { width: 400px; }
   #response { width: 100%; }
 }
@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+  height: 100vh;
 }
 
 #container {
