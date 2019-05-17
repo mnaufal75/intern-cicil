@@ -1,39 +1,58 @@
+html {
+  font-size: 100%;
+}
+
+@media {
+  #container { width: 400px; }
+  #response { width: 100%; }
+}
+
+@media screen and (max-width: 1060px) {
+  #container { width: 40%; }
+  #response { width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+  #container { width:55%; }
+  #response { width:100%; }
+}
+
 body {
-  background-color: blue;
+  background-color: teal;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
 }
 
 #container {
   background-color: white;
-  /* height: 200px; */
-  width: 400px;
-  padding: 20px;
-
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 5px;
 }
 
-#fetchData {
+#requestButton {
   border: 0;
   background-color: orange;
   color: white;
-  height: 40px;
   width: 100px;
-
+  border-radius: 5px;
   margin-bottom: 10px;
+  font-size: 11px;
+  padding: 5px;
 }
 
-#dataBg {
-  background-color: gray;
-  width: 300px;
-  padding: 10px;
+#response {
+  background-color: silver;
+  padding: 5px;
   text-align: center;
 }
 
-#data {
-  margin: 0px
+#responseText {
+  margin: 0px;
+  font-size: 11px;
 }
